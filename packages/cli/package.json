@@ -1,0 +1,19 @@
+{
+  "name": "@cursor-pets/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "cursor-pet-statusline": "./dist/statusline.mjs"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "dev": "node ./scripts/build.mjs --watch",
+    "lint": "node -e \"process.exit(0)\"",
+    "typecheck": "node -e \"process.exit(0)\""
+  },
+  "dependencies": {
+    "@cursor-pets/core": "0.1.0"
+  }
+}
+

@@ -1,0 +1,45 @@
+{
+  "id": "ascii-cat",
+  "displayName": "ASCII Cat",
+  "description": "A tiny ASCII cat for Cursor Pets.",
+  "author": "cursor-pets",
+  "version": "0.1.0",
+  "renderers": [
+    {
+      "kind": "ascii",
+      "frameMs": 250,
+      "states": {
+        "idle": {
+          "frames": [
+            "(=^.^=)",
+            "(=^o^=)",
+            "(=^.^=)"
+          ]
+        },
+        "thinking": {
+          "frames": [
+            "(=^.^=) ...",
+            "(=^.^=)  ..",
+            "(=^.^=)   ."
+          ]
+        },
+        "running": {
+          "frames": [
+            "ᓚᘏᗢ___",
+            "ᓚᘏᗢ__ ",
+            "ᓚᘏᗢ_  "
+          ],
+          "frameMs": 120
+        },
+        "failed": {
+          "frames": [
+            "(=x.x=)",
+            "(=X.X=)"
+          ],
+          "frameMs": 400
+        }
+      }
+    }
+  ]
+}
+

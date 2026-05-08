@@ -1,0 +1,16 @@
+{
+  "id": "sprite-ghost",
+  "displayName": "Ghost (Sprite)",
+  "description": "A shy little ghost.",
+  "author": "cursor-pets",
+  "version": "0.1.0",
+  "renderers": [
+    {
+      "kind": "sprite",
+      "spritesheet": { "path": "spritesheet.svg", "mime": "image/svg+xml" },
+      "atlas": { "columns": 4, "rows": 1, "cellWidth": 64, "cellHeight": 64 },
+      "animation": { "states": { "idle": { "row": 0, "frameCount": 4, "frameMs": 180 } } }
+    }
+  ]
+}
+

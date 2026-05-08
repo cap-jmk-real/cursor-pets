@@ -1,0 +1,21 @@
+{
+  "name": "@cursor-pets/companion",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/main.cjs",
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "dev": "node ./scripts/build.mjs --watch & electron .",
+    "start": "electron .",
+    "lint": "node -e \"process.exit(0)\"",
+    "typecheck": "node -e \"process.exit(0)\""
+  },
+  "dependencies": {
+    "@cursor-pets/core": "0.1.0",
+    "chokidar": "^4.0.3"
+  },
+  "devDependencies": {
+    "electron": "^35.4.0"
+  }
+}
+

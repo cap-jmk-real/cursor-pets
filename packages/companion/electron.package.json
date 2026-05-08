@@ -1,0 +1,7 @@
+{
+  "name": "cursor-pets-companion",
+  "private": true,
+  "type": "module",
+  "main": "index.js"
+}
+

@@ -1,0 +1,28 @@
+{
+  "id": "sprite-blob",
+  "displayName": "Sprite Blob",
+  "description": "Tiny SVG spritesheet example (for dev).",
+  "author": "cursor-pets",
+  "version": "0.1.0",
+  "renderers": [
+    {
+      "kind": "sprite",
+      "spritesheet": {
+        "path": "spritesheet.svg",
+        "mime": "image/svg+xml"
+      },
+      "atlas": {
+        "columns": 3,
+        "rows": 1,
+        "cellWidth": 64,
+        "cellHeight": 64
+      },
+      "animation": {
+        "states": {
+          "idle": { "row": 0, "frameCount": 3, "frameMs": 200 }
+        }
+      }
+    }
+  ]
+}
+

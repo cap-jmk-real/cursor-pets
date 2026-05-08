@@ -1,0 +1,18 @@
+{
+  "name": "cursor-pets",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "dev": "npm run -ws dev",
+    "lint": "npm run -ws lint",
+    "typecheck": "npm run -ws typecheck"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5",
+    "typescript": "^5.6.3"
+  }
+}
+

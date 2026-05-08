@@ -1,0 +1,25 @@
+{
+  "name": "@cursor-pets/extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/extension.js",
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "dev": "node ./scripts/build.mjs --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "node -e \"process.exit(0)\""
+  },
+  "dependencies": {
+    "@cursor-pets/core": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  }
+}
+
