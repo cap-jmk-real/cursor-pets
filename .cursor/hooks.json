@@ -1,26 +1,5 @@
 {
   "version": 1,
-  "hooks": {
-    "preToolUse": [
-      {
-        "command": ".cursor/hooks/pet-state-hook.mjs"
-      }
-    ],
-    "postToolUseFailure": [
-      {
-        "command": ".cursor/hooks/pet-state-hook.mjs"
-      }
-    ],
-    "beforeShellExecution": [
-      {
-        "command": ".cursor/hooks/pet-state-hook.mjs"
-      }
-    ],
-    "afterShellExecution": [
-      {
-        "command": ".cursor/hooks/pet-state-hook.mjs"
-      }
-    ]
-  }
+  "hooks": {}
 }
 

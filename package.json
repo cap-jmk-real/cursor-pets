@@ -8,7 +8,8 @@
     "build": "npm run -ws build",
     "dev": "npm run -ws dev",
     "lint": "npm run -ws lint",
-    "typecheck": "npm run -ws typecheck"
+    "typecheck": "npm run -ws typecheck",
+    "import-codex": "node packages/cli/dist/import-codex.mjs"
   },
   "devDependencies": {
     "esbuild": "^0.25.5",

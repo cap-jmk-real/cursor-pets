@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "bin": {
-    "cursor-pet-statusline": "./dist/statusline.mjs"
+    "cursor-pet-statusline": "./dist/statusline.mjs",
+    "cursor-pets-import-codex": "./dist/import-codex.mjs"
   },
   "scripts": {
     "build": "node ./scripts/build.mjs",

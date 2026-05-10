@@ -11,6 +11,22 @@ Cursor Desktop extension + optional floating companion app + Cursor CLI status-l
 - `examples/packs`: sample pet packs (ASCII + spritesheet-ready)
 - `.cursor/hooks.json` + `.cursor/hooks/`: optional hooks to update pet state from agent events
 
+## Pet without the sidebar title bar
+
+Cursor **cannot remove** the title row on a sidebar view (“Cursor Pets”) — that chrome is drawn by the editor, not your HTML.
+
+For **only the pet** (frameless window, no that bar), use the **floating companion**:
+
+- From the command palette: **`Cursor Pets: Open Floating Pet (no title bar)`**  
+  (workspace must be this repo so `packages/companion` exists), or
+- From a terminal: `npm run -w @cursor-pets/companion start`
+
+Companion UX:
+
+- **Resize** the window by dragging edges (default ~400×220; position/size are remembered).
+- **Drag** the pet area by grabbing empty space (see hint bar).
+- **☰ Menu** or **right‑click** opens a **native OS menu** (not clipped like HTML menus).
+
 ## Quick start (extension)
 
 1. Install deps
@@ -43,4 +59,12 @@ For local development, copy a pack into your user packs directory:
 ## License
 
 MIT
+
+## Optional: enable Cursor hooks (pet reacts to agent activity)
+
+This repo includes a hook script at `.cursor/hooks/pet-state-hook.mjs`, but **hooks are disabled by default** to avoid noise.
+
+To enable:
+
+- Copy `.cursor/hooks.example.json` to `.cursor/hooks.json` (overwrite).
 

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="64" viewBox="0 0 256 64">
+  <rect width="256" height="64" fill="transparent"/>
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#e2e8f0" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <!-- frame 0 -->
+  <g transform="translate(0,0)">
+    <path d="M32 10c10 0 18 8 18 18v22c-4-3-7-3-9 0-2-3-6-3-9 0-3-3-7-3-9 0-2-3-5-3-9 0V28c0-10 8-18 18-18z" fill="url(#g)"/>
+    <circle cx="26" cy="30" r="3" fill="#0f172a"/><circle cx="38" cy="30" r="3" fill="#0f172a"/>
+  </g>
+  <!-- frame 1 (blink) -->
+  <g transform="translate(64,0)">
+    <path d="M32 10c10 0 18 8 18 18v22c-4-3-7-3-9 0-2-3-6-3-9 0-3-3-7-3-9 0-2-3-5-3-9 0V28c0-10 8-18 18-18z" fill="url(#g)"/>
+    <path d="M23 30h6" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="38" cy="30" r="3" fill="#0f172a"/>
+  </g>
+  <!-- frame 2 -->
+  <g transform="translate(128,0)">
+    <path d="M32 10c10 0 18 8 18 18v22c-4-3-7-3-9 0-2-3-6-3-9 0-3-3-7-3-9 0-2-3-5-3-9 0V28c0-10 8-18 18-18z" fill="url(#g)"/>
+    <circle cx="26" cy="30" r="3" fill="#0f172a"/><circle cx="38" cy="30" r="3" fill="#0f172a"/>
+    <path d="M26 38c3 3 9 3 12 0" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- frame 3 (float) -->
+  <g transform="translate(192,0)">
+    <path d="M32 9c10 0 18 8 18 18v23c-4-3-7-3-9 0-2-3-6-3-9 0-3-3-7-3-9 0-2-3-5-3-9 0V27c0-10 8-18 18-18z" fill="url(#g)"/>
+    <circle cx="26" cy="29" r="3" fill="#0f172a"/><circle cx="38" cy="29" r="3" fill="#0f172a"/>
+  </g>
+</svg>
+

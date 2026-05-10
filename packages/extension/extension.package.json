@@ -8,34 +8,29 @@
     "vscode": "^1.90.0"
   },
   "categories": ["Other"],
-  "activationEvents": ["onView:cursorPets.view"],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:cursorPets.openFloatingCompanion",
+    "onCommand:cursorPets.quickMenu",
+    "onCommand:cursorPets.selectPet"
+  ],
   "main": "./dist/extension.cjs",
   "contributes": {
-    "viewsContainers": {
-      "activitybar": [
-        {
-          "id": "cursorPets.container",
-          "title": "Pets",
-          "icon": "media/paw.svg"
-        }
-      ]
-    },
-    "views": {
-      "cursorPets.container": [
-        {
-          "id": "cursorPets.view",
-          "name": "Cursor Pets"
-        }
-      ]
-    },
     "commands": [
+      {
+        "command": "cursorPets.quickMenu",
+        "title": "Cursor Pets: Menu"
+      },
       { "command": "cursorPets.selectPet", "title": "Cursor Pets: Select Pet" },
-      { "command": "cursorPets.toggle", "title": "Cursor Pets: Toggle View" },
+      { "command": "cursorPets.toggle", "title": "Cursor Pets: Menu (legacy)" },
       { "command": "cursorPets.resetState", "title": "Cursor Pets: Reset State" },
       { "command": "cursorPets.actions", "title": "Cursor Pets: Actions" },
-      { "command": "cursorPets.hide", "title": "Cursor Pets: Hide" },
-      { "command": "cursorPets.generatePet", "title": "Cursor Pets: Generate Pet…" }
+      { "command": "cursorPets.hide", "title": "Cursor Pets: About sidebar mode" },
+      { "command": "cursorPets.generatePet", "title": "Cursor Pets: Generate Pet…" },
+      {
+        "command": "cursorPets.openFloatingCompanion",
+        "title": "Cursor Pets: Open Floating Pet (sprites, no title bar)"
+      }
     ]
   }
 }
-

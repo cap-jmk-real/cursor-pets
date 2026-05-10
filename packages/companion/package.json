@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node ./scripts/build.mjs",
     "dev": "node ./scripts/build.mjs --watch & electron .",
-    "start": "electron .",
+    "start": "set CURSOR_PETS_USERDATA=%USERPROFILE%\\.cursor-pets\\companion\\userdata&& set CURSOR_PETS_CACHE=%USERPROFILE%\\.cursor-pets\\companion\\cache&& electron . --user-data-dir=\"%CURSOR_PETS_USERDATA%\" --disk-cache-dir=\"%CURSOR_PETS_CACHE%\"",
     "lint": "node -e \"process.exit(0)\"",
     "typecheck": "node -e \"process.exit(0)\""
   },
